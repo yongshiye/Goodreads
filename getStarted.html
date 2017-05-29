@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<!--
+	Urban by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Getting Started</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">Goodreads <span>API Instructions by Yongshi Ye</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Goodreads.com APIs</a></li>
+					<li><a href="key.html">Requesting an API Key</a></li>
+					<li><a href="getStarted.html">Getting Started</a></li>
+					<li><a href="firstReq.html">Make your first request!</a></li>
+					<li><a href="summary.html">Summary</a></li>
+				</ul>
+			</nav>
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Section -->
+					<section class="wrapper">
+						<div class="inner">
+							<header class="align-center">
+								<h1>Getting Started</h1>
+								<p>Following these steps to call the book.title API</p>
+							</header>
+							<div class="flex flex-2">
+								<div class="col col2">
+                                    <!--request-->
+									<h3>1. Making the request</h3>
+                                    <p>To make the request using book.title API, you can write a HTML/JS file to call it with method GET, or just simply type in an url in the browser. you will need this base url:<b>  https://www.goodreads.com/book/title.</b> with strings indicate titles, author or other parameters for the request. The parameters accepted by this request are format (XML or JSON), key, title, author and rating.</p>
+                                    <p>Let's do an example request in detail:</p>
+                                    <p>1. First, you need to choose the format for your response. If you want it to be presented as XML, you should enter <b>xml</b> after <b>title.</b> (or <b>json</b> if you want otherwise). For example: <b>https://www.goodreads.com/book/title.xml</b></p>
+                                    <p>2. After choosing the format, place a <b>?</b> before other parameters. Then you can pass arguments into the request, for example <b>author=Arthur+Conan+Doyle</b>. Every word needs to be joint together by an <b>+</b>. If you want to add another parameter, you should put an <b>&</b> before it. </p>
+                                    <p>3. A complete sample request url should be like this : <a href="https://www.goodreads.com/book/title.xml?author=Arthur+Conan+Doyle&key=caLHbHiOFf3574vyVrdA&title=Hound+of+the+Baskervilles" target="_blank"><b>https://www.goodreads.com/book/title.xml?author=Arthur+Conan+Doyle&key=caLHbHiOFf3574vyVrdA&title=Hound+of+the+Baskervilles</b></a> </br>(key is the developer key you get from Goodreads.com. To learn how to get a developer key, click <a href="key.html"><b>here</b></a>. You should use your own key to call the API)</p>
+                                    <p>Try to call it yourself! If you did so, you should get a page with a lot of information that are hard to read. How do we interpret them then?</p>
+                                    
+                                    <!--interpret-->
+                                    <h3>2. Interpreting the response</h3>
+									<p>I will illustrate how to interpret the response if I call the API for book title <b>Harry Potter</b> for example.</p>
+                                    
+                                    <!--display-->
+                                    <h3>3. Display the results</h3>
+                                    <p>Now you can choose what to display in an Html page.</p>
+                                    
+                                    
+                                    <a href="firstReq.html" class="button">Next: Make your first request!</a>
+								</div>
+								<div class="col col1 first">
+									<div class="image round fit">
+										<a href="generic.html" class="link"><img src="images/pic02.jpg" alt="" /></a>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</section>
+
+				
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+                    <p>&copy; Yongshi Ye | yeyo@oregonstate.edu </p>
+                    <p>All rights reserved. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.</p>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
