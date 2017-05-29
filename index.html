@@ -26,7 +26,7 @@
 					<li><a href="about.html">About Goodreads.com APIs</a></li>
 					<li><a href="key.html">Requesting an API key</a></li>
 					<li><a href="getStarted.html">Getting Started</a></li>
-					<li><a href="firstReq.html">Make your first request!</a></li>
+					<!--<li><a href="firstReq.html">Make your first request!</a></li>-->
 					<li><a href="summary.html">Summary</a></li>
 				</ul>
 			</nav>
@@ -37,7 +37,7 @@
 					<header>
 						<h1>Introducing Goodreads.com API</h1>
                         <p>This is a beginner instruction for using book.title API from Goodreads.com</p>
-                        <p> to request popular reviews for a given title.</p>
+                        <p> to request description and rating for a given title.</p>
 					</header>
 					<a href="#main" class="button big scrolly">Let's get started!</a>
 				</div>
@@ -47,7 +47,7 @@
 			<div id="main">
 
 				<!-- Section 1 about-->
-					<section class="wrapper style1">
+					<section class="wrapper style2">
 						<div class="inner">
 							<!-- 2 Columns -->
 								<div class="flex flex-2">
@@ -58,7 +58,7 @@
 									</div>
 									<div class="col col2">
 										<h3>About Goodreads.com APIs</h3>
-										<p>Goodreads.com is a popular social network for book lovers to exchange their thoughts. Inside this site, you can see thousands of reviews made by its members. You can get a very good sense about how worthy one book is by reading those valuable reviews. If you are planning to start reading a new book, but can't decide which one to go for, Goodreads.com will definitely give you a great hint of that. Goodreads.com has become an Amazon company in 2013. Now it's integrated with Amazon kindle, so you can read the reviews more convenient for millions of books and easily pick the one you want to read most. You can write comments and share them to the community. You can, of course read reviews from other members too.</p>
+										<p>Goodreads.com is a popular social network for book lovers to exchange their thoughts. Inside this site, you can see thousands of reviews made by its members. You can get a very good sense about how worthy one book is by the rating of the book. If you are planning to start reading a new book, but can't decide which one to go for, Goodreads.com will definitely give you a great hint of that. Goodreads.com has become an Amazon company in 2013. Now it's integrated with Amazon kindle, so you can read the reviews and get the ratings more convenient for millions of books and easily pick the one you want to read most. You can write comments and share them to the community. You can, of course read reviews from other members too.</p>
                                         <p>Do you know you can request those reviews by APIs too?</p>
 										<a href="about.html" class="button">Learn More</a>
 									</div>
@@ -67,12 +67,12 @@
 					</section>
 
 				<!-- Section 2 API key-->
-					<section class="wrapper style2">
+					<section class="wrapper style1">
 						<div class="inner">
 							<div class="flex flex-2">
 								<div class="col col2">
 									<h3>Requesting an API key</h3>
-									<p>An developer key also called as an API key, is the key used to access the information from the website. Most of websites require an API key to security their database from milicious calls. The API key is like a specific identity for a developer, so it will allow the website to moniter the usage of one developer. An API key is required for <b>book.title</b> API. So the following steps will show you how to get an API key from Goodreads.com. </p>
+									<p>An developer key also called as an API key, is the key used to access the information from the website. Most of websites require an API key to protect their database from milicious calls. The API key is like a specific identity for a developer, so it will allow the website to moniter the usage of one developer. An API key is required for <b>book.title</b> API. So the following steps will show you how to get an API key from Goodreads.com. </p>
 									<a href="key.html" class="button">Learn More</a>
 								</div>
 								<div class="col col1 first">
@@ -85,7 +85,7 @@
 					</section>
                 
                 <!-- Section 3 code-->
-					<section class="wrapper style1">
+					<section class="wrapper style2">
 						<div class="inner">
 							<!-- 2 Columns -->
 								<div class="flex flex-2">
@@ -96,34 +96,18 @@
 									</div>
 									<div class="col col2">
 										<h3>Getting Started</h3>
-										<p>Etiam posuere hendrerit arcu, ac blandit nulla. Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex.</p>
-										<p>Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex. </p>
+										<p>Follow these three steps to see the results!</p>
+										<p>1. Making the request:To make the request using book.title API, you can write a HTML/JS file to call it with method GET, or just simply type in an url in the browser.</p>
+                                        <p>2. Interpreting the response: In this request, Goodreads.com has returned a lot of information. You can see different tags and you can choose whatever you want to display in your own Html page. Contents between two corresponding tags are the information we want from the request.</p>
+                                        <p>3. Display the results: use the following code to display variables that you want. </p>
+                                        <p>Click learn more to read the detail process.</p>
 										<a href="getStarted.html" class="button">Learn More</a>
 									</div>
 								</div>
 						</div>
-					</section>
-
-                <!-- Section 4 example-->
-					<section class="wrapper style2">
-						<div class="inner">
-							<div class="flex flex-2">
-								<div class="col col2">
-									<h3>Make your first request!</h3>
-									<p>Etiam posuere hendrerit arcu, ac blandit nulla. Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex.</p>
-									<p>Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex. </p>
-									<a href="firstReq.html" class="button">Learn More</a>
-								</div>
-								<div class="col col1 first">
-									<div class="image round fit">
-										<a href="generic.html" class="link"><img src="images/pic02.jpg" alt="" /></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
+                </section>
                 
-				<!-- Section ?summary-->
+				<!-- Section summary-->
 					<section class="wrapper style1">
 						<div class="inner">
 							<header class="align-center">
@@ -149,7 +133,7 @@
 									<div class="image round fit">
 										<img src="images/pic04.jpg" alt="" />
 									</div>
-									<p>Interpreting the JSON file </p>
+									<p>Interpreting the file </p>
 									
 								</div>
 							</div>

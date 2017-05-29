@@ -26,7 +26,6 @@
 					<li><a href="about.html">About Goodreads.com APIs</a></li>
 					<li><a href="key.html">Requesting an API Key</a></li>
 					<li><a href="getStarted.html">Getting Started</a></li>
-					<li><a href="firstReq.html">Make your first request!</a></li>
 					<li><a href="summary.html">Summary</a></li>
 				</ul>
 			</nav>
@@ -54,13 +53,27 @@
                                     <!--interpret-->
                                     <h3>2. Interpreting the response</h3>
 									<p>I will illustrate how to interpret the response if I call the API for book title <b>Harry Potter</b> for example.</p>
-                                    
+                                    <p>Here's a peek of some return data from Goodreads.com<img src="content_images/result1.png" width="100%" height="auto"></p>
+                                    <p>In this request, Goodreads.com has returned a lot of information. You can see different tags and you can choose whatever you want to display in your own Html page. Contents between two corresponding tags are the information we want from the request. For example, I have passed "Harry Potter" to the request as title, and the site has returned the best matched book with this title :"Harry Potter and the Sorcerer's Stone (Harry Potter, #1)". </p>
+                            
                                     <!--display-->
                                     <h3>3. Display the results</h3>
-                                    <p>Now you can choose what to display in an Html page.</p>
+                                    <p>Now you can choose what to display in your Html page. I choose to display title, description and rating in the page. Here's the code: </p>
+                                    <img src="content_images/jscript2.png" width="100%" height="auto">
+                            </br></br>
+                                    <p>In this part of code, it generates the HTTP request. First, you need to pass the API endpoint which is <b>www.goodreads.com/book/title</b> in this case. After that, you need to pass the search query into the url. For example, I search for book with title = "Harry+Potter", author = "J.K.+Rowling", so I passed these value into the request. Also, you should have the developer key into the url. The next lines is to send the request using HTTP method "GET".</p>
+                                    <img src="content_images/jscript3.png" width="100%" height="auto">
+                            </br></br>
+                                    <p>In this part of code, I interpreted the response retruned by Goodreads.com. I parsed the elements with tag title, description and average rating in the Html file. Then I displayed these value of each element on the page. </p>
+                                    <p>Below is the complete code of this API request.</p>
+                                    <img src="content_images/js1.png" width="100%" height="auto">
+                            </br></br>
+                                    <p>Here's the result showing in the page: </p>
+                                    <img src="content_images/display.png" width="100%" height="auto">
+                            </br></br>
                                     
                                     
-                                    <a href="firstReq.html" class="button">Next: Make your first request!</a>
+                                    <a href="summary.html" class="button">Next: Summary</a>
 								</div>
 								<div class="col col1 first">
 									<div class="image round fit">
