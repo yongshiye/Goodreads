@@ -1,0 +1,28 @@
+
+<script type="text/javascript">
+	var req = new XMLHttpRequest;
+	var url = "https://www.goodreads.com/book/title.xml?key=";
+	var api_key = "caLHbHiOFf3574vyVrdA";
+	var query = "&author=J.K.+Rowling&title=Harry+Potter"
+	req.open("GET", url + api_key + query, true);
+	req.send();
+
+	req.addEventListener("readystatechange", processRequest, false);
+
+function processRequest(e){
+	if(req.status == 200){
+		parser = new DOMParser();
+		xmlDoc = parser.parseFromString(req.responseText,"text/xml");
+      document.getElementById("title").textContent = xmlDoc.getElementsByTagName("title")[0].textContent;
+      document.getElementById("description").textContent = xmlDoc.getElementsByTagName("description")[0].textContent;
+      document.getElementById("review_widget").textContent = xmlDoc.getElementsByTagName("review_widget")[0].textContent;;
+  }
+}
+</script>
+
+
+
+<h3>Book Review Data:</h3>
+<p>Title: <span id="title"></span></p>
+<p>Description: <span id="description"></span></p>
+<p>Review: <span id="review_widget"></span></p>
